@@ -7,6 +7,22 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+h1 {
+	font-size: 2.6rem;
+	line-height: 2.8rem;
+}
+
+h2,
+.nav__logo-text {
+	font-size: 2rem;
+	line-height: 2.2rem;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -24,25 +40,45 @@ a {
 
 .container {
 	min-width: 320px;
-	max-width: 950px;
+	max-width: 850px;
 	margin: auto;
 	padding: 0 5px;
 }
 
 :root {
 	font-family: 'Roboto', sans-serif;
-	--text-light-color: #fff;
-	--text-color: rgba(255, 255, 255, 0.75);
-	--text-color-alternate: #a9a9a9;
-	--text-color-3: #707070;
-	--main-text-color: #505155;
-	--text-bold-color: #14a9ee;
-	--block-name-color: #6f7380;
-	--block-name-color2: rgba(255, 255, 255, 0.6);
-	--color-for-signs: rgb(238, 46, 20);
-	--background-color: #232428;
+	--text-color: #c5c5c6;
+	--text-color-logo: #af4537;
+	--text-color-hover: #ffffff;
+	--text-color-сaptions: #b6a592;
+	--background-color-header: #302f35;
+	--background-color-main: #393941;
+	--background-color-title: #34ad34;
 }
 
-h1 {
-	color: var(--text-color-alternate);
+body,
+a {
+	color: var(--text-color);
+}
+
+h1,
+h2 {
+	text-align: center;
+	color: var(--text-color-сaptions);
+}
+
+a:hover {
+	color: var(--text-color-hover);
+}
+
+.button {
+	background-color: var(--text-color-сaptions);
+	border: none;
+	color: var(--text-color-hover);
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
 }

@@ -1,0 +1,33 @@
+.header,
+.footer {
+	background-color: var(--background-color-header);
+}
+
+.header {
+	padding: 5px 0;
+}
+
+nav {
+	text-align: center;
+}
+
+.nav__logo {
+	margin-bottom: 10px;
+}
+
+.nav__logo-text {
+	color: var(--text-color-logo);
+}
+
+.burger-icon {
+	display: block;
+}
+
+.burger-checkbox,
+.nav__list_active {
+	display: none;
+}
+
+.burger-checkbox:checked~.nav__list_active {
+	display: block;
+}

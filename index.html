@@ -6,94 +6,133 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bosses</title>
+	<link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
 	<link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 	<header class="header">
-		<nav class="nav">
-			<a href="./"><img src="./img/logo.svg" alt="logo">Coffee Bosses</a>
-			<ul>
-				<li><a href="#advantages">Advantages</a></li>
-				<li><a href="#works">How It Works</a></li>
-				<li><a href="#pricing">Pricing</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<nav class="nav">
+				<a class="nav__link" href="./">
+					<img class="nav__logo" src="./img/logo.svg" alt="logo"><span class="nav__logo-text">Coffee
+						Bosses</span>
+				</a>
+				<label class="burger-icon" for="burger-checkbox">☰</label>
+				<input class="burger-checkbox" id="burger-checkbox" type="checkbox">
+				<ul class="nav__list nav__list_active">
+					<li class="nav-item">
+						<a class="nav__link" href="#advantages">Advantages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav__link" href="#works">How It Works</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav__link" href="#pricing">Pricing</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main class="main">
-		<section>
-			<h1>Network of mini-coffee houses</h1>
-			<form action="">
-				<input type="text">
-				<button type="button">order</button>
-			</form>
-		</section>
+		<div class="container">
+			<section class="network">
+				<h1 class="network__title">Network of mini-coffee houses</h1>
+				<form class="network__form" action="#">
+					<div class="network__form-text">
+						<input type="text" placeholder="Enter your email address" required>
+					</div>
+					<button class="button" type="submit">order</button>
+				</form>
+			</section>
 
-		<ul id="advantages" class="advantages">
-			<li>
-				<img src="" alt="">
-				<h2>Profitable</h2>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quasi dolorem, minus odit ducimus cumque
-					nesciunt consequatur natus repellat totam officiis nam commodi iure, maxime mollitia placeat dicta. Quam, ea?
-				</p>
-			</li>
-			<li>
-				<img src="" alt="">
-				<h2>Easily</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore, tenetur dolor corporis possimus ipsam
-					earum similique dolores officia, vel quaerat molestiae aspernatur perspiciatis neque repellat facilis
-					voluptatem in non!</p>
-			</li>
-			<li>
-				<img src="" alt="">
-				<h2>Just</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis tenetur doloremque, modi quos
-					neque quidem, dolorem dolores sint reiciendis recusandae dolor accusantium corrupti natus ipsa dignissimos
-					totam. Odio, odit.</p>
-			</li>
-		</ul>
+			<ul class="advantages" id="advantages">
+				<li class="advantages__item">
+					<h2 class="advantages__title">Profitable</h2>
+					<p class="advantages__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quasi dolorem, minus
+						odit ducimus cumque
+						nesciunt consequatur natus repellat totam officiis nam commodi iure, maxime mollitia placeat dicta. Quam,
+						ea?
+					</p>
+				</li>
+				<li class="advantages__item">
+					<h2 class="advantages__title">Easily</h2>
+					<p class="advantages__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore, tenetur
+						dolor corporis possimus
+						ipsam
+						earum similique dolores officia, vel quaerat molestiae aspernatur perspiciatis neque repellat facilis
+						voluptatem in non!</p>
+				</li>
+				<li class="advantages__item">
+					<h2 class="advantages__title">Just</h2>
+					<p class="advantages__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis
+						tenetur doloremque, modi
+						quos
+						neque quidem, dolorem dolores sint reiciendis recusandae dolor accusantium corrupti natus ipsa dignissimos
+						totam. Odio, odit.</p>
+				</li>
+			</ul>
 
-		<div id="works" class="works">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/V0chclMaxXg" title="YouTube video player"
-				frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
+			<div class="works" id="works">
+				<iframe class="works__video" src=" https://www.youtube.com/embed/V0chclMaxXg" title="YouTube video player"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+
+			<ul class="pricing" id="pricing">
+				<li class="prising__item">
+					<h2 class="prising__title">Сoffee</h2>
+					<b>234$</b>
+					<p class="prising__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet accusamus
+						maxime consequuntur
+						nobis
+						deserunt velit? Sit, iste a? Quaerat qui sapiente eaque optio ex assumenda dolore iure consequuntur quae.
+					</p>
+					<button class="button" type="button">select</button>
+				</li>
+				<li class="prising__item">
+					<h2 class="prising__title">Module</h2>
+					<b>140$</b>
+					<p class="prising__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere at illo
+						quaerat nobis modi officiis
+						eaque ipsum? Saepe deleniti iure sed. Harum, libero repellat. Sapiente sed doloribus molestiae est. Saepe
+						deleniti iure sed.</p>
+					<button class="button" type="button">select</button>
+				</li>
+				<li class="prising__item">
+					<h2 class="prising__title">Equipment</h2>
+					<b>48$</b>
+					<p class="prising__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae
+						pariatur voluptas vero sint,
+						ipsa iure quos quaerat voluptate. Asperiores nam voluptatem in ab eligendi facilis accusamus magni aliquid
+						neque!</p>
+					<button class="button" type="button">select</button>
+				</li>
+			</ul>
 		</div>
-
-		<ul id="pricing" class="pricing">
-			<li>
-				<h2>Сoffee machine</h2>
-				<b>234$</b>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate amet accusamus maxime consequuntur nobis
-					deserunt velit? Sit, iste a? Quaerat qui sapiente eaque optio ex assumenda dolore iure consequuntur quae.</p>
-				<button class="button">select</button>
-			</li>
-			<li>
-				<h2>Module</h2>
-				<b>140$</b>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere at illo quaerat nobis modi officiis
-					eaque ipsum? Saepe deleniti iure sed. Harum, libero repellat. Sapiente sed doloribus molestiae est.</p>
-				<button class="button">select</button>
-			</li>
-			<li>
-				<h2>Equipment</h2>
-				<b>48$</b>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae pariatur voluptas vero sint,
-					ipsa iure quos quaerat voluptate. Asperiores nam voluptatem in ab eligendi facilis accusamus magni aliquid
-					neque!</p>
-				<button class="button">select</button>
-			</li>
-		</ul>
 	</main>
 
 	<footer class="footer">
-		<ul>
-			<a href="./"><img src="./img/logo.svg" alt="logo">Coffee Bosses</a>
-			<li><a href="#advantages">Advantages</a></li>
-			<li><a href="#works">How It Works</a></li>
-			<li><a href="#pricing">Pricing</a></li>
-		</ul>
-		<p>&#169; Copyright 2022, Original Bosses</p>
+		<div class="container">
+			<nav class="nav">
+				<a class="nav__link" href="./">
+					<img class="nav__logo" src="./img/logo.svg" alt="logo"><span class="nav__logo-text">Coffee Bosses</span>
+				</a>
+				<ul class="nav__list">
+					<li class="nav-item">
+						<a class="nav__link" href="#advantages">Advantages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav__link" href="#works">How It Works</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav__link" href="#pricing">Pricing</a>
+					</li>
+				</ul>
+				<p>&#169; Copyright 2022, Original Bosses</p>
+		</div>
+		</nav>
 	</footer>
 </body>
 
