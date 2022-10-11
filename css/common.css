@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -23,15 +24,16 @@ a {
 
 .container {
 	min-width: 320px;
+	max-width: 950px;
 	margin: auto;
-	padding: 5px;
+	padding: 0 5px;
 }
 
 :root {
 	font-family: 'Roboto', sans-serif;
 	--text-light-color: #fff;
-	--text-color-1: rgba(255, 255, 255, 0.75);
-	--text-color-2: #a9a9a9;
+	--text-color: rgba(255, 255, 255, 0.75);
+	--text-color-alternate: #a9a9a9;
 	--text-color-3: #707070;
 	--main-text-color: #505155;
 	--text-bold-color: #14a9ee;
@@ -39,4 +41,8 @@ a {
 	--block-name-color2: rgba(255, 255, 255, 0.6);
 	--color-for-signs: rgb(238, 46, 20);
 	--background-color: #232428;
+}
+
+h1 {
+	color: var(--text-color-alternate);
 }
