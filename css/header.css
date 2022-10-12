@@ -21,10 +21,10 @@ nav {
 	color: var(--text-color-logo);
 }
 
-.nav__logo-text:hover,
-.burger-icon:hover,
 .nav__logo-text:focus,
-.burger-icon:focus {
+.burger-icon:focus,
+.nav__logo-text:hover,
+.burger-icon:hover {
 	color: var(--background-color-title);
 }
 
