@@ -15,12 +15,19 @@ nav {
 	margin-bottom: 10px;
 }
 
-.nav__logo-text {
+.nav__logo-text,
+.burger-icon {
+	display: block;
 	color: var(--text-color-logo);
 }
 
+.nav__logo-text:hover,
+.burger-icon:hover {
+	color: var(--background-color-title);
+}
+
 .burger-icon {
-	display: block;
+	cursor: pointer;
 }
 
 .burger-checkbox,

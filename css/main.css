@@ -1,6 +1,6 @@
 .main {
 	background-color: var(--background-color-main);
-	padding: 10px 0;
+	padding: 20px 0;
 }
 
 .advantages__title,
@@ -17,7 +17,7 @@
 .network__title,
 .network__form,
 .network__form-text {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .network__form,
@@ -57,35 +57,47 @@
 		padding: 0 10px;
 	}
 
+	.header {
+		position: fixed;
+		width: 100%;
+	}
+
+	.main {
+		padding-top: 70px;
+	}
+
 	.burger-icon {
 		display: none;
 	}
 
-	.nav {
+	.nav,
+	.nav__link,
+	.nav__list_active,
+	.nav__list {
 		display: flex;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
 	}
 
-	.nav__link {
+	.nav__item {
+		margin-left: 10px;
+	}
+
+	.nav__link_active {
 		display: block;
+		margin-left: 10px;
 	}
 
 	.nav__logo {
 		width: 40px;
-		display: inline-block;
-		vertical-align: top;
-		margin-right: 10px;
-	}
-
-	.nav__logo-text {
-		display: inline-block;
-		vertical-align: top;
+		margin: 0 10px 0 0;
 	}
 
 	.pricing {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -10px;
+		margin-bottom: 10px;
 	}
 
 	.prising__item {
