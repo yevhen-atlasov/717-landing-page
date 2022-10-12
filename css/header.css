@@ -22,7 +22,9 @@ nav {
 }
 
 .nav__logo-text:hover,
-.burger-icon:hover {
+.burger-icon:hover,
+.nav__logo-text:focus,
+.burger-icon:focus {
 	color: var(--background-color-title);
 }
 

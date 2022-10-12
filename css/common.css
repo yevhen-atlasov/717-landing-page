@@ -68,7 +68,8 @@ h2 {
 	color: var(--text-color-сaptions);
 }
 
-a:hover {
+a:hover,
+a:focus {
 	color: var(--background-color-title);
 }
 
@@ -84,7 +85,8 @@ a:hover {
 	cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
 	background-color: var(--text-color-hover);
 	color: var(--text-color-сaptions);
 }
