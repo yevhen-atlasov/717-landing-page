@@ -43,7 +43,7 @@ a {
 	min-width: 320px;
 	max-width: 850px;
 	margin: auto;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
 :root {
@@ -71,6 +71,7 @@ h2 {
 a:focus,
 a:hover {
 	color: var(--background-color-title);
+	text-decoration: underline;
 }
 
 .button {

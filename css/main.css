@@ -51,20 +51,19 @@
 	padding: 5px;
 }
 
-@media (min-width: 560px) {
-	.container {
-		width: 560px;
-		padding: 0 10px;
-	}
+@media (min-width: 533px) {
 
 	.header {
 		position: fixed;
-		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		/*width: 100%;*/
 		box-shadow: 0 1px 5px var(--text-color-сaptions);
 	}
 
 	.main {
-		padding-top: 70px;
+		padding-top: 120px;
 	}
 
 	.burger-icon {
@@ -90,8 +89,9 @@
 	}
 
 	.nav__logo {
-		width: 40px;
-		margin: 0 10px 0 0;
+		width: 80px;
+		height: 80px;
+		margin: 0;
 	}
 
 	.pricing {
@@ -116,10 +116,6 @@
 }
 
 @media (min-width: 750px) {
-	.container {
-		width: 750px;
-		padding: 0 10px;
-	}
 
 	.works__video {
 		min-height: 400px;
